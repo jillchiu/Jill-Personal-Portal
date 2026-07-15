@@ -56,7 +56,7 @@ Fields:
 * user_email
 * user_type
 
-### contact
+### Contact
 
 Stores messages submitted from contact form.
 
