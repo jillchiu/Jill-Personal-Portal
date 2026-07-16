@@ -39,9 +39,18 @@
 					$dbname = "myweb";
 					date_default_timezone_set("UTC");
 					$date = date("Y-m-d h:i:sa");
+
+					$DB_HOST = getenv("DB_HOST");
+					$DB_PORT = getenv("DB_PORT");
+					$DB_USER = getenv("DB_USER");
+					$DB_PASSWORD = getenv("DB_PASSWORD");
+					$DB_NAME = getenv("DB_NAME");
+
+					// $mysqli = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT);
 					
 					//處理DB連接跟INSERT錯誤
-					if(! $connect_db = new mysqli($db, $user_name, $user_pw, $dbname)){
+					// if(! $connect_db = new mysqli($db, $user_name, $user_pw, $dbname)){
+					if(! $connect_db = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT)){
 						throw exception ($e);
 					}else{
 						$insert = "insert into contact (name, email, message, date) values ('$name', '$email', '$message', '$date')";

@@ -57,10 +57,10 @@ INSERT INTO `contact` (`id`, `name`, `email`, `message`, `date`) VALUES
 -- --------------------------------------------------------
 
 --
--- テーブルの構造 `user`
+-- テーブルの構造 `user2`
 --
 
-CREATE TABLE `user` (
+CREATE TABLE `user2` (
   `user_id` int(5) NOT NULL,
   `user_name` varchar(12) NOT NULL,
   `user_password` varchar(12) NOT NULL,
@@ -72,7 +72,7 @@ CREATE TABLE `user` (
 -- テーブルのデータのダンプ `user`
 --
 
-INSERT INTO `user` (`user_id`, `user_name`, `user_password`, `user_type`, `user_email`) VALUES
+INSERT INTO `user2` (`user_id`, `user_name`, `user_password`, `user_type`, `user_email`) VALUES
 (1, 'admin', 'admin', 'a', ''),
 (2, 'vcnrjen', 'nfcrken', 'n', ''),
 (3, 'qqqq4', 'aaaa4', 'n', 'zzzz@gmail.com'),
@@ -101,7 +101,7 @@ ALTER TABLE `contact`
 --
 -- テーブルのインデックス `user`
 --
-ALTER TABLE `user`
+ALTER TABLE `user2`
   ADD PRIMARY KEY (`user_id`);
 
 --
@@ -117,7 +117,7 @@ ALTER TABLE `contact`
 --
 -- テーブルの AUTO_INCREMENT `user`
 --
-ALTER TABLE `user`
+ALTER TABLE `user2`
   MODIFY `user_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 

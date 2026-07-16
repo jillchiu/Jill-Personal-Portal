@@ -1,14 +1,14 @@
-# Personal Portfolio Website
+# 🚀 Personal Portfolio Website
 
 A full-stack personal portfolio website built with PHP and MySQL.
 
 The project includes user authentication, contact form handling, portfolio presentation, and profile management. It was developed in 2022 as one of my earliest full-stack web applications and represents the starting point of my software development journey.
 
-## Screenshot
+## 📷 Screenshot
 
 ![Index](./index.png)
 
-## Features
+## ✨ Features
 
 ### Personal Introduction
 * About me page
@@ -32,7 +32,7 @@ The project includes user authentication, contact form handling, portfolio prese
 * Email format verification
 * Message persistence using MySQL
 
-## Tech Stack
+## 🛠 Tech Stack
 
 | Category | Technology |
 |----------|------------|
@@ -41,7 +41,7 @@ The project includes user authentication, contact form handling, portfolio prese
 | Database | MySQL |
 | Libraries | fullPage.js, animate.css |
 
-## Database Design
+## 🧩 Database Design
 
 The system uses MySQL with two main tables:
 
@@ -68,7 +68,7 @@ Fields:
 * date
 
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 .
@@ -84,7 +84,7 @@ Fields:
 └── database.sql
 ```
 
-## Implementation Details
+## 🎯 Implementation Details
 
 ### Authentication Flow
 
@@ -103,7 +103,7 @@ The contact system validates:
 
 Submitted messages are stored in MySQL.
 
-## What I Learned
+## 🧠 What I Learned
 
 * Building a complete web application with PHP and MySQL
 * Designing relational databases
@@ -111,7 +111,7 @@ Submitted messages are stored in MySQL.
 * Server-side form validation
 * Combining frontend interaction with backend processing
 
-## Limitations & Future Improvements
+## ⚠ Limitations & Future Improvements
 
 This project was developed as a learning project.
 
@@ -125,7 +125,7 @@ Possible improvements:
 * Add better error handling
 * Add multilingual support
 
-## Architecture
+## 🧩 Architecture
 
 ```text
 Client (HTML/CSS/JavaScript)
@@ -137,7 +137,7 @@ PHP Application
 MySQL Database
 ```
 
-## Development Journey
+## 🧱 Development Journey
 
 This project marks the beginning of my software development journey.
 
@@ -145,7 +145,7 @@ Since completing it, I have shifted my focus toward modern frontend development 
 
 Although this project contains legacy implementations, I keep it public as a record of my growth as a developer.
 
-## Highlights
+## 💡 Highlights
 
 - Built a complete PHP + MySQL web application from scratch
 - Implemented session-based authentication

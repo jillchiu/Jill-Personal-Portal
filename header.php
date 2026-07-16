@@ -66,9 +66,18 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 				$user_pw = "";
 				$dbname = "myweb";
 				date_default_timezone_set("UTC");
+
+				$DB_HOST = getenv("DB_HOST");
+				$DB_PORT = getenv("DB_PORT");
+				$DB_USER = getenv("DB_USER");
+				$DB_PASSWORD = getenv("DB_PASSWORD");
+				$DB_NAME = getenv("DB_NAME");
+
+				// $mysqli = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT);
 				
 				//處理DB連接跟INSERT錯誤
-				if(! $connect_db = new mysqli($db, $user_name, $user_pw, $dbname)){
+				// if(! $connect_db = new mysqli($db, $user_name, $user_pw, $dbname)){
+				if(! $connect_db = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT)){
 					throw exception ($e);
 				}else if($login_or_register=="register"){
 					$sql = "select user_id from user where user_name='$username'";
@@ -76,7 +85,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 					$row = $result->fetch_array(MYSQLI_ASSOC);
 					
 					if(!isSet($row["user_id"])){
-						$sql = "insert into user (user_name, user_password, user_type) values ('$username', '$password', 'n')";
+						$sql = "insert into user2 (user_name, user_password, user_type) values ('$username', '$password', 'n')";
 						
 						if(!$register = $connect_db->query($sql)){
 							throw new exception ($e);
@@ -126,8 +135,18 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 		$user_pw = "";
 		$dbname = "myweb";
 		date_default_timezone_set("UTC");
+
+		$DB_HOST = getenv("DB_HOST");
+		$DB_PORT = getenv("DB_PORT");
+		$DB_USER = getenv("DB_USER");
+		$DB_PASSWORD = getenv("DB_PASSWORD");
+		$DB_NAME = getenv("DB_NAME");
+
+		// $mysqli = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT);
 		
-		$connect_db = new mysqli($db, $user_name, $user_pw, $dbname);
+		// $connect_db = new mysqli($db, $user_name, $user_pw, $dbname);
+		$connect_db = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT);
+
 		
 		$now_username = $_SESSION["username"];
 		$message = "No record has been updated!";
@@ -220,8 +239,18 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 		$user_pw = "";
 		$dbname = "myweb";
 		date_default_timezone_set("UTC");
+
+		$DB_HOST = getenv("DB_HOST");
+		$DB_PORT = getenv("DB_PORT");
+		$DB_USER = getenv("DB_USER");
+		$DB_PASSWORD = getenv("DB_PASSWORD");
+		$DB_NAME = getenv("DB_NAME");
+
+		// $mysqli = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT);
 		
-		$connect_db = new mysqli($db, $user_name, $user_pw, $dbname);
+		// $connect_db = new mysqli($db, $user_name, $user_pw, $dbname);
+		$connect_db = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT);
+
 		
 		$message = "";
 		
