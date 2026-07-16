@@ -40,7 +40,7 @@
 				<h3>For the administrator, they can <mark>edit the booking, maintain the system and generate</mark> the reports.</h3>
 			</div>
 			<div class="slide" data-anchor="slide5">
-				<h3>If you feel interested, you can click <mark><a href="https://github.com/jillchiu/myweb/tree/main/Final%20Year%20Project">here</a></mark> to view source code.</h3>
+				<h3>If you feel interested, you can click <mark><a href="https://github.com/jillchiu/hotel_booking_system">here</a></mark> to view source code.</h3>
 			</div>
 		</div>
 		
@@ -60,11 +60,11 @@
 			<div class="slide" data-anchor="slide3">
 				<img src="portfolio_second_p3.jpg" width="80%" height="80%"/>
 				<h3>This page is related to my resume.<br/>
-				If you feel interested after looking, you can <a href="mailto:jillll0329@gmail.com"><mark>contact me</mark></a> to take the full version resume.</h3>
+				If you feel interested after looking, you can <a href="mailto:kk923049@gmail.com"><mark>contact me</mark></a> to take the full version resume.</h3>
 			</div>
 			<div class="slide" data-anchor="slide4">
 				<img src="portfolio_second_p4.jpg" width="80%" height="80%"/>
-				<h3>This page is for <mark>contacting</mark> me through the <mark>database</mark>. Also you can contact me by <a href="mailto:jillll0329@gmail.com"><mark>email</mark></a> too.<br/>
+				<h3>This page is for <mark>contacting</mark> me through the <mark>database</mark>. Also you can contact me by <a href="mailto:kk923049@gmail.com"><mark>email</mark></a> too.<br/>
 				System will <mark>checking</mark> the data you entered and it will show different messages by pop up window if you entered incorrectly.<br/></h3>
 			</div>
 			<div class="slide" data-anchor="slide5">
@@ -74,14 +74,14 @@
 				System will <mark>checking</mark> the data you entered and it will show different messages by pop up window if you entered incorrectly.<br/></h4>
 			</div>
 			<div class="slide" data-anchor="slide6">
-				<h3>If you feel interested, you can click <mark><a href="https://github.com/jillchiu/myweb/tree/main/jillchiu">here</a></mark> to view source code.<br/>
+				<h3>If you feel interested, you can click <mark><a href="https://github.com/jillchiu/Jill-Personal-Portal">here</a></mark> to view source code.<br/>
 				This website will be <mark>updated irregularly</mark>.</h3>		
 			</div>
 		</div>
 		
 		<div class="section" id="section4_portfolio">
 			<h3 class="end_portfolio">That's all for my portfolios.<br/>
-			If you feel interested, you can click <a href="https://github.com/jillchiu/myweb"><mark>here</mark></a> to view source code.</h3>
+			If you feel interested, you can click <a href="https://github.com/jillchiu/"><mark>here</mark></a> to view source code.</h3>
 		</div>
 		
 	</div>

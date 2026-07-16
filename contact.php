@@ -84,7 +84,7 @@
 <div class="common_main" style="background-color: black;">
 	<div class="form_detail">
 		<h1><b><i>Contact me</i></b></h1>
-		<p>You can contact me through the following form or by <a href="mailto:jillll0329@gmail.com">Email</a>.</p>
+		<p>You can contact me through the following form or by <a href="mailto:kk923049@gmail.com">Email</a>.</p>
 		<p>I will reply your message through email you filled in following form.</p>
 		<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" id="contact" class="form" >
 			<input type="text" name="name" id="name" size="42" placeholder="Name (required)" class="name" required autocomplete="off" /><br/>

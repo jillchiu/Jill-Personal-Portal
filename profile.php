@@ -21,8 +21,8 @@
 			<dd><h3>Jill Chiu</h3></dd>
 			<dd><p>Majoring in <mark>Telecommunication and Networking</mark> when I was in institute</p></dd>
 			<dd><p>From Hong Kong</p></dd>
-			<dd><a href="mailto:jillll0329@gmail.com">jillll0329@gmail.com</a></dd>
-			<dd><a href="https://www.jillchiu.com">https://www.jillchiu.com</a></dd>
+			<dd><a href="mailto:kk923049@gmail.com">kk923049@gmail.com</a></dd>
+			<dd><a href="https://jill-personal-portal.onrender.com">https://jill-personal-portal.onrender.com</a></dd>
 		</dl>
 		<br/>
 	</div>
@@ -64,7 +64,7 @@
 		<dl>
 			<dt><h2>PORTFOLIOS</h2></dt>
 			<dd><p><mark>2022</mark></p></dd>
-			<dd><p><a href="https://jillchiu.000webhostapp.com/">My website</a></p></dd>
+			<dd><p><a href="https://jill-personal-portal.onrender.com">My website</a></p></dd>
 			<dd><p>Using HTML, CSS, JavaScript(jQuery), PHP, MySQL</p></dd>
 			<dd><p><mark>2015</mark></p></dd>
 			<dd><p>Hotel Booking System (Bachelor Degree Final Year Project)</p></dd>
