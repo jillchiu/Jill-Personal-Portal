@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="main.css">
@@ -38,8 +41,6 @@
 			<p>Welcome, 
 
 <?php
-session_start();
-
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 
 	$submit = $_POST["submit"];
@@ -163,7 +164,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 					$message = "User name has been existed! Please choose another user name! \u000a";
 				}else{
 					$now_username = $_SESSION["username"];
-					$sql = "update user set user_name='$update_username' where user_name='$now_username'";
+					$sql = "update user2 set user_name='$update_username' where user_name='$now_username'";
 					$result = $connect_db->query($sql);
 					
 					$message = "User name has been updated! \u000a";
@@ -178,7 +179,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 		if($_POST["update_password"]!=null){
 			$update_password = $_POST["update_password"];
 			
-			$sql = "update user set user_password='$update_password' where user_name='$now_username'";
+			$sql = "update user2 set user_password='$update_password' where user_name='$now_username'";
 			$result = $connect_db->query($sql);
 			
 			if($message != "No record has been updated!"){
@@ -216,7 +217,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 					}
 					
 				}else{
-					$sql = "update user set user_email='$update_email' where user_name='$now_username'";
+					$sql = "update user2 set user_email='$update_email' where user_name='$now_username'";
 					$result = $connect_db->query($sql);
 					
 					if($message != "No record has been updated!"){
@@ -290,7 +291,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 						
 						$new_password = generateRandomString();
 						
-						$sql = "update user set user_password='$new_password' where user_name='$forget_password_username' and user_email='$forget_password_email'";
+						$sql = "update user2 set user_password='$new_password' where user_name='$forget_password_username' and user_email='$forget_password_email'";
 						$result = $connect_db->query($sql);
 					
 						$message = "Password was changed! \u000aYour new password is ".$new_password;
