@@ -4,6 +4,12 @@ A full-stack personal portfolio website built with PHP and MySQL.
 
 The project includes user authentication, contact form handling, portfolio presentation, and profile management. It was developed in 2022 as one of my earliest full-stack web applications and represents the starting point of my software development journey.
 
+## 🌐 Live Demo
+
+🔗 Demo: https://jill-personal-portal.onrender.com
+
+📦 Source Code: https://github.com/jillchiu/Jill-Personal-Portal/
+
 ## 📷 Screenshot
 
 ![Index](./index.png)
