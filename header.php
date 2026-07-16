@@ -80,7 +80,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 				if(! $connect_db = new mysqli($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME, $DB_PORT)){
 					throw exception ($e);
 				}else if($login_or_register=="register"){
-					$sql = "select user_id from user where user_name='$username'";
+					$sql = "select user_id from user2 where user_name='$username'";
 					$result = $connect_db->query($sql);
 					$row = $result->fetch_array(MYSQLI_ASSOC);
 					
@@ -96,7 +96,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 						echo "<script>alert('Sorry! User name is existed, please choose another user name!')</script>";
 					}
 				}else if($login_or_register=="login"){
-					$sql = "select * from user where user_name='$username' and user_password='$password'";
+					$sql = "select * from user2 where user_name='$username' and user_password='$password'";
 					$result = $connect_db->query($sql);
 					$row = $result->fetch_array(MYSQLI_ASSOC);
 					
@@ -155,7 +155,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 			$update_username = $_POST["update_username"];
 			
 			if(str_replace(" ", "", $update_username)!=null){
-				$sql = "select * from user where user_name='$update_username'";
+				$sql = "select * from user2 where user_name='$update_username'";
 				$result = $connect_db->query($sql);
 				$row = $result->fetch_array(MYSQLI_ASSOC);
 				
@@ -204,7 +204,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 				}
 				
 			}else{
-				$sql = "select * from user where user_email='$update_email'";
+				$sql = "select * from user2 where user_email='$update_email'";
 				$result = $connect_db->query($sql);
 				$row = $result->fetch_array(MYSQLI_ASSOC);
 				
@@ -269,7 +269,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 				$forget_password_username = $_POST["forget_password_username"];
 			
 				if(str_replace(" ", "", $forget_password_username)!=null){
-					$sql = "select * from user where user_name='$forget_password_username' and user_email='$forget_password_email'";
+					$sql = "select * from user2 where user_name='$forget_password_username' and user_email='$forget_password_email'";
 					$result = $connect_db->query($sql);
 					$row = $result->fetch_array(MYSQLI_ASSOC);
 					

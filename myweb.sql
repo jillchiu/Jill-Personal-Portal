@@ -69,7 +69,7 @@ CREATE TABLE `user2` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- テーブルのデータのダンプ `user`
+-- テーブルのデータのダンプ `user2`
 --
 
 INSERT INTO `user2` (`user_id`, `user_name`, `user_password`, `user_type`, `user_email`) VALUES
@@ -99,7 +99,7 @@ ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
 
 --
--- テーブルのインデックス `user`
+-- テーブルのインデックス `user2`
 --
 ALTER TABLE `user2`
   ADD PRIMARY KEY (`user_id`);
@@ -115,7 +115,7 @@ ALTER TABLE `contact`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- テーブルの AUTO_INCREMENT `user`
+-- テーブルの AUTO_INCREMENT `user2`
 --
 ALTER TABLE `user2`
   MODIFY `user_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
